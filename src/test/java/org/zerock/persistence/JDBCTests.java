@@ -24,8 +24,8 @@ public class JDBCTests {
 	public void testConnection() {
 		try(Connection con =
 				DriverManager.getConnection(
-						"jdbc:oracle:thin:@localhost:1521/xepdb1",
-						"book_ex",
+						"jdbc:oracle:thin:@localhost:1521:XE",
+						"c##book_ex",
 						"book_ex")) {
 			
 			log.info(con);
